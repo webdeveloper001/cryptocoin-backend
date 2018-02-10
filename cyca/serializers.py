@@ -2,177 +2,177 @@ from rest_framework import serializers
 from models import Bat, Bch, Bnb, Btc, Btg, Cyca, Dash, Dcr, Dgb, Doge, Eos, Etc, Eth, Fun, Gno, Gnt, Icx, Knc, Ltc, Omg, Pivx, Ppt, Rep, Salt, Snt, SpatialRefSys, Trx, Veri, Vtc, Wtc, Xem, Xmr, Xvg, Zec, Zrx
 
 
-class BatSerializer(serializers.HyperlinkedModelSerializer):
+class BatSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Bat
 		fields = ("__all__")
 
-class BchSerializer(serializers.HyperlinkedModelSerializer):
+class BchSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Bch
 		fields = ("__all__")
 
-class BnbSerializer(serializers.HyperlinkedModelSerializer):
+class BnbSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Bnb
 		fields = ("__all__")
 
-class BtcSerializer(serializers.HyperlinkedModelSerializer):
+class BtcSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Btc
 		fields = ("__all__")
 
-class BtgSerializer(serializers.HyperlinkedModelSerializer):
+class BtgSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Btg
 		fields = ("__all__")
 
-class CycaSerializer(serializers.HyperlinkedModelSerializer):
+class CycaSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Cyca
 		fields = ("__all__")
 
-class DashSerializer(serializers.HyperlinkedModelSerializer):
+class DashSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Dash
 		fields = ("__all__")
 
-class DcrSerializer(serializers.HyperlinkedModelSerializer):
+class DcrSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Dcr
 		fields = ("__all__")
 
-class DgbSerializer(serializers.HyperlinkedModelSerializer):
+class DgbSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Dgb
 		fields = ("__all__")
 
-class DogeSerializer(serializers.HyperlinkedModelSerializer):
+class DogeSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Doge
 		fields = ("__all__")
 
-class EosSerializer(serializers.HyperlinkedModelSerializer):
+class EosSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Eos
 		fields = ("__all__")
 
-class EtcSerializer(serializers.HyperlinkedModelSerializer):
+class EtcSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Etc
 		fields = ("__all__")
 
-class EthSerializer(serializers.HyperlinkedModelSerializer):
+class EthSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Eth
 		fields = ("__all__")
 
-class FunSerializer(serializers.HyperlinkedModelSerializer):
+class FunSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Fun
 		fields = ("__all__")
 
-class GnoSerializer(serializers.HyperlinkedModelSerializer):
+class GnoSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Gno
 		fields = ("__all__")
 
-class GntSerializer(serializers.HyperlinkedModelSerializer):
+class GntSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Gnt
 		fields = ("__all__")
 
-class IcxSerializer(serializers.HyperlinkedModelSerializer):
+class IcxSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Icx
 		fields = ("__all__")
 
-class KncSerializer(serializers.HyperlinkedModelSerializer):
+class KncSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Knc
 		fields = ("__all__")
 
-class LtcSerializer(serializers.HyperlinkedModelSerializer):
+class LtcSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Ltc
 		fields = ("__all__")
 
-class OmgSerializer(serializers.HyperlinkedModelSerializer):
+class OmgSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Omg
 		fields = ("__all__")
 
-class PivxSerializer(serializers.HyperlinkedModelSerializer):
+class PivxSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Pivx
 		fields = ("__all__")
 
-class PptSerializer(serializers.HyperlinkedModelSerializer):
+class PptSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Ppt
 		fields = ("__all__")
 
-class RepSerializer(serializers.HyperlinkedModelSerializer):
+class RepSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Rep
 		fields = ("__all__")
 
-class SaltSerializer(serializers.HyperlinkedModelSerializer):
+class SaltSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Salt
 		fields = ("__all__")
 
-class SntSerializer(serializers.HyperlinkedModelSerializer):
+class SntSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Snt
 		fields = ("__all__")
 
-class SpatialRefSysSerializer(serializers.HyperlinkedModelSerializer):
+class SpatialRefSysSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = SpatialRefSys
 		fields = ("__all__")
 
-class TrxSerializer(serializers.HyperlinkedModelSerializer):
+class TrxSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Trx
 		fields = ("__all__")
 
-class VeriSerializer(serializers.HyperlinkedModelSerializer):
+class VeriSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Veri
 		fields = ("__all__")
 
-class VtcSerializer(serializers.HyperlinkedModelSerializer):
+class VtcSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Vtc
 		fields = ("__all__")
 
-class WtcSerializer(serializers.HyperlinkedModelSerializer):
+class WtcSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Wtc
 		fields = ("__all__")
 
-class XemSerializer(serializers.HyperlinkedModelSerializer):
+class XemSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Xem
 		fields = ("__all__")
 
-class XmrSerializer(serializers.HyperlinkedModelSerializer):
+class XmrSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Xmr
 		fields = ("__all__")
 
-class XvgSerializer(serializers.HyperlinkedModelSerializer):
+class XvgSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Xvg
 		fields = ("__all__")
 
-class ZecSerializer(serializers.HyperlinkedModelSerializer):
+class ZecSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Zec
 		fields = ("__all__")
 
-class ZrxSerializer(serializers.HyperlinkedModelSerializer):
+class ZrxSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Zrx
 		fields = ("__all__")
