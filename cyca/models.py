@@ -12,13 +12,13 @@ from django.db import models
 
 class Bat(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -27,13 +27,13 @@ class Bat(models.Model):
 
 class Bch(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -42,13 +42,13 @@ class Bch(models.Model):
 
 class Bnb(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -57,13 +57,13 @@ class Bnb(models.Model):
 
 class Btc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -72,13 +72,13 @@ class Btc(models.Model):
 
 class Btg(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -87,13 +87,13 @@ class Btg(models.Model):
 
 class Cyca(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -102,13 +102,13 @@ class Cyca(models.Model):
 
 class Dash(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -117,13 +117,13 @@ class Dash(models.Model):
 
 class Dcr(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -132,13 +132,13 @@ class Dcr(models.Model):
 
 class Dgb(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -147,13 +147,13 @@ class Dgb(models.Model):
 
 class Doge(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -162,13 +162,13 @@ class Doge(models.Model):
 
 class Eos(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -177,13 +177,13 @@ class Eos(models.Model):
 
 class Etc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -192,13 +192,13 @@ class Etc(models.Model):
 
 class Eth(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -207,13 +207,13 @@ class Eth(models.Model):
 
 class Fun(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -222,13 +222,13 @@ class Fun(models.Model):
 
 class Gno(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -237,13 +237,13 @@ class Gno(models.Model):
 
 class Gnt(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -252,13 +252,13 @@ class Gnt(models.Model):
 
 class Icx(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -267,13 +267,13 @@ class Icx(models.Model):
 
 class Knc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -282,13 +282,13 @@ class Knc(models.Model):
 
 class Ltc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -297,13 +297,13 @@ class Ltc(models.Model):
 
 class Omg(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -312,13 +312,13 @@ class Omg(models.Model):
 
 class Pivx(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -327,13 +327,13 @@ class Pivx(models.Model):
 
 class Ppt(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -342,13 +342,13 @@ class Ppt(models.Model):
 
 class Rep(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -357,13 +357,13 @@ class Rep(models.Model):
 
 class Salt(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -372,13 +372,13 @@ class Salt(models.Model):
 
 class Snt(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -399,13 +399,13 @@ class SpatialRefSys(models.Model):
 
 class Trx(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -414,13 +414,13 @@ class Trx(models.Model):
 
 class Veri(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -429,13 +429,13 @@ class Veri(models.Model):
 
 class Vtc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -444,13 +444,13 @@ class Vtc(models.Model):
 
 class Wtc(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -459,13 +459,13 @@ class Wtc(models.Model):
 
 class Xem(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -474,13 +474,13 @@ class Xem(models.Model):
 
 class Xmr(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -489,13 +489,13 @@ class Xmr(models.Model):
 
 class Xvg(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -504,13 +504,13 @@ class Xvg(models.Model):
 
 class Zec(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -519,13 +519,13 @@ class Zec(models.Model):
 
 class Zrx(models.Model):
     date = models.DateField(blank=True, primary_key=True, unique=True)
-    txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    price = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    exchangevolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    generatedcoins = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
-    fees = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
+    txvolume = models.FloatField(blank=True, null=True)
+    txcount = models.FloatField(blank=True, null=True)
+    marketcap = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    exchangevolume = models.FloatField(blank=True, null=True)
+    generatedcoins = models.FloatField(blank=True, null=True)
+    fees = models.FloatField(blank=True, null=True)
 
     class Meta:
         managed = False
