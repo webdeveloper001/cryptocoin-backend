@@ -61,5 +61,6 @@ router.register(r'zrx', views.ZrxViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include(router.urls))
+    url(r'^', include(router.urls)),
+    url(r'^corr/(?P<from_currency>\w{0,5})/(?P<to_currency>\w{0,50})/$', views.correlation)
 ]

@@ -4,6 +4,11 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework import viewsets
+from django.http import HttpResponse
+from django.apps import apps
+import pandas as pd
+import pprint
+import json
 
 from serializers import BatSerializer, BchSerializer, BnbSerializer, BtcSerializer, BtgSerializer, CycaSerializer, DashSerializer, DcrSerializer, DgbSerializer, DogeSerializer, EosSerializer, EtcSerializer, EthSerializer, FunSerializer, GnoSerializer, GntSerializer, IcxSerializer, KncSerializer, LtcSerializer, OmgSerializer, PivxSerializer, PptSerializer, RepSerializer, SaltSerializer, SntSerializer, SpatialRefSysSerializer, TrxSerializer, VeriSerializer, VtcSerializer, WtcSerializer, XemSerializer, XmrSerializer, XvgSerializer, ZecSerializer, ZrxSerializer
 from models import Bat, Bch, Bnb, Btc, Btg, Cyca, Dash, Dcr, Dgb, Doge, Eos, Etc, Eth, Fun, Gno, Gnt, Icx, Knc, Ltc, Omg, Pivx, Ppt, Rep, Salt, Snt, SpatialRefSys, Trx, Veri, Vtc, Wtc, Xem, Xmr, Xvg, Zec, Zrx
@@ -148,3 +153,17 @@ class ZecViewSet(viewsets.ModelViewSet):
 class ZrxViewSet(viewsets.ModelViewSet):
 	queryset = Zrx.objects.all()
 	serializer_class = ZrxSerializer
+
+
+def correlation(request, from_currency, to_currency):
+	one = apps.get_model(app_label='cyca', model_name=from_currency.title())
+	other = apps.get_model(app_label='cyca', model_name=to_currency.title())
+	exec("one_serializer = "+ from_currency.title() + "Serializer(one.objects.all(), many=True)")
+	exec("other_serializer = "+to_currency.title() + "Serializer(other.objects.all(), many=True)")
+	one_data = one_serializer.data
+	other_data = other_serializer.data
+	one_df = pd.DataFrame(one_data)
+	other_df = pd.DataFrame(other_data)
+	data = one_df.loc[:, 'txvolume':].rolling(3).corr(other_df.loc[:,'txvolume':]).to_json()
+	return HttpResponse(data)
+
