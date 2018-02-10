@@ -11,7 +11,7 @@ from django.db import models
 
 
 class Bat(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -26,7 +26,7 @@ class Bat(models.Model):
 
 
 class Bch(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -41,7 +41,7 @@ class Bch(models.Model):
 
 
 class Bnb(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -56,7 +56,7 @@ class Bnb(models.Model):
 
 
 class Btc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -71,7 +71,7 @@ class Btc(models.Model):
 
 
 class Btg(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -86,7 +86,7 @@ class Btg(models.Model):
 
 
 class Cyca(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -101,7 +101,7 @@ class Cyca(models.Model):
 
 
 class Dash(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -116,7 +116,7 @@ class Dash(models.Model):
 
 
 class Dcr(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -131,7 +131,7 @@ class Dcr(models.Model):
 
 
 class Dgb(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -146,7 +146,7 @@ class Dgb(models.Model):
 
 
 class Doge(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -161,7 +161,7 @@ class Doge(models.Model):
 
 
 class Eos(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -176,7 +176,7 @@ class Eos(models.Model):
 
 
 class Etc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -191,7 +191,7 @@ class Etc(models.Model):
 
 
 class Eth(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -206,7 +206,7 @@ class Eth(models.Model):
 
 
 class Fun(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -221,7 +221,7 @@ class Fun(models.Model):
 
 
 class Gno(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -236,7 +236,7 @@ class Gno(models.Model):
 
 
 class Gnt(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -251,7 +251,7 @@ class Gnt(models.Model):
 
 
 class Icx(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -266,7 +266,7 @@ class Icx(models.Model):
 
 
 class Knc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -281,7 +281,7 @@ class Knc(models.Model):
 
 
 class Ltc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -296,7 +296,7 @@ class Ltc(models.Model):
 
 
 class Omg(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -311,7 +311,7 @@ class Omg(models.Model):
 
 
 class Pivx(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -326,7 +326,7 @@ class Pivx(models.Model):
 
 
 class Ppt(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -341,7 +341,7 @@ class Ppt(models.Model):
 
 
 class Rep(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -356,7 +356,7 @@ class Rep(models.Model):
 
 
 class Salt(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -371,7 +371,7 @@ class Salt(models.Model):
 
 
 class Snt(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -398,7 +398,7 @@ class SpatialRefSys(models.Model):
 
 
 class Trx(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -413,7 +413,7 @@ class Trx(models.Model):
 
 
 class Veri(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -428,7 +428,7 @@ class Veri(models.Model):
 
 
 class Vtc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -443,7 +443,7 @@ class Vtc(models.Model):
 
 
 class Wtc(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -458,7 +458,7 @@ class Wtc(models.Model):
 
 
 class Xem(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -473,7 +473,7 @@ class Xem(models.Model):
 
 
 class Xmr(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -488,7 +488,7 @@ class Xmr(models.Model):
 
 
 class Xvg(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -503,7 +503,7 @@ class Xvg(models.Model):
 
 
 class Zec(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
@@ -518,7 +518,7 @@ class Zec(models.Model):
 
 
 class Zrx(models.Model):
-    date = models.DateField(blank=True, null=True)
+    date = models.DateField(blank=True, primary_key=True, unique=True)
     txvolume = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     txcount = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
     marketcap = models.DecimalField(max_digits=65535, decimal_places=65535, blank=True, null=True)
